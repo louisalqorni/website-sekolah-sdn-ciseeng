@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDN CISEENG 01 - Beranda</title>
+     <link rel="icon" href="css/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">SDN CISEENG 01</a>
+            <nav class="menu-desktop">
+                <a href="index.html" class="menu-link active">Beranda</a>
+                <a href="profil.html" class="menu-link">Profil</a>
+                <div class="dropdown">
+                    <a href="#" class="menu-link dropbtn">Informasi <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="guru.html">Guru & Tendik</a>
+                        <a href="kegiatan.html">Kegiatan</a>
+                        <a href="prestasi.html">Prestasi</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="galeri.html">Galeri</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="menu-link dropbtn">Perpustakaan <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="./perpustakaan/login.php">Perpustakaan Digital</a>
+                    </div>
+                </div>
+            </nav>
+            <button id="btn-menu" class="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="menu-mobile">
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="guru.html">Guru & Tendik</a>
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="prestasi.html">Prestasi</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="./perpustakaan/login.php" class="mobile-pro-link">Perpustakaan Digital</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slider-section">
+            <div class="slider-container">
+                <div class="slide fade" style="background-image: url('img/foto6.jpg');">
+                    <div class="slide-content" data-aos="fade-up">
+                        <h2>Mewujudkan Generasi Unggul Dan Berakhlak Mulia</h2>
+                        <p>Pendidikan berkualitas untuk masa depan cerah.</p>
+                    </div>
+                </div>
+                <div class="slide fade" style="background-image: url('img/foto2.jpg');">
+                    <div class="slide-content" data-aos="fade-up">
+                        <h2>Lingkungan Belajar Yang Nyaman Dan Inovatif</h2>
+                        <p>Fasilitas modern mendukung proses belajar-mengajar.</p>
+                    </div>
+                </div>
+                <div class="slide fade" style="background-image: url('img/profile.jpg');">
+                    <div class="slide-content" data-aos="fade-up">
+                        <h2>Selamat Datang Di SDN Ciseeng 01</h2>
+                        <p>Bergabunglah dengan keluarga besar SDN Ciseeng 01.</p>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center" class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <section id="sekilas-tentang-kami" class="section-padded">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">Sekilas Tentang Kami</h2>
+                <p class="section-paragraph-center">
+                   SDN Ciseeng 01 didirikan pada tahun 1963. Tujuan Sekolah ini didirikan untuk mengimplementasikan kurikulum untuk mewujudkan misi sekolah meliputi optimalisasi sarana prasarana, digitalisasi sistem penilaian, pembentukan karakter religius dan sosial (taat ibadah, simpati, empati, kebhinekaan global, bangga potensi daerah, gotong royong), serta peningkatan kualitas pembelajaran melalui program HOTS, literasi, numerasi, dan mempertahankan prestasi yang sudah ada.
+                </p>
+                <a href="profil.html" class="btn-secondary mt-5">Baca Profil Lengkap</a>
+            </div>
+        </section>
+
+        <section class="section-padded bg-light-blue">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title text-center">Inovasi dan Prestasi</h2>
+                <div class="grid-3">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="img/kreasiseni.jpg" alt="Kegiatan Sekolah" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Pekan Kreasi Seni Siswa</h3>
+                            <p class="card-text">Siswa-siswi menunjukkan bakat seni mereka dalam acara tahunan yang
+                                meriah.</p>
+                            <a href="kegiatan.html" class="btn-link">Lihat Kegiatan <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="img/prestasi.jpg" alt="Prestasi Siswa" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Olimpiade Matematika</h3>
+                            <p class="card-text">Selamat kepada Siswa-siswi SDN Ciseeng 01</p>
+                            <a href="prestasi.html" class="btn-link">Lihat Prestasi <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="img/minatbaca.jpg" alt="Blog Artikel" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Membangun Minat Baca Sejak Dini</h3>
+                            <p class="card-text">Tips dan trik dari guru kami untuk menumbuhkan kecintaan membaca pada
+                                anak.</p>
+                            <a href="blog.html" class="btn-link">Baca Blog <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-ppdb">
+            <div class="container text-center" data-aos="zoom-in">
+                <h2>Ayo Bergabung Dengan SDN Ciseeng 01!</h2>
+                <p>Jadikan anak anda bagian dari komunitas belajar yang inovatif dan berkarakter.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>SDN CISEENG 01</h3>
+                <p>Mewujudkan generasi cerdas dan berakhlak mulia melalui pendidikan yang berkualitas dan lingkungan
+                    yang nyaman.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/sdnciseeng01" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="mailto:sdnegericiseeng1@gmail.com" aria-label="Gmail"><i class="far fa-envelope"></i></a>
+                    <a href="tel:+6281299674833" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="profil.html">Profil Sekolah</a></li>
+                    <li><a href="guru.html">Guru & Tendik</a></li>
+                    <li><a href="kegiatan.html">Kegiatan</a></li>
+                    <li><a href="prestasi.html">Prestasi</a></li>
+                    <li><a href="blog.html">Blog Sekolah</a></li>
+                    <li><a href="galeri.html">Galeri Foto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section professional-features">
+                <h3>Perpustakaan</h3>
+                <ul>
+                    <li><a href="./perpustakaan/login.php">Perpustakaan Digital</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. H. Usa, No. 271, Parigi Mekar, Kecamatan, Ciseeng,
+                    Kabupaten Bogor</p>
+                <p><i class="fas fa-phone"></i> (081299674833)</p>
+                <p><i class="fas fa-envelope"></i> sdnegriciseeng1@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SDN CISEENG 01. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

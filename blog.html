@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDN Ciseeng 01 - Blog Sekolah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">SDN CISEENG 01</a>
+            <nav class="menu-desktop">
+                <a href="index.html" class="menu-link">Beranda</a>
+                <a href="profil.html" class="menu-link">Profil</a>
+                <div class="dropdown">
+                    <a href="#" class="menu-link dropbtn active">Informasi <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="guru.html">Guru & Tendik</a>
+                        <a href="kegiatan.html">Kegiatan</a>
+                        <a href="prestasi.html">Prestasi</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="galeri.html">Galeri</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="menu-link dropbtn">Perpustakaan<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="./perpustakaan/login.php">Perpustakaan Digital</a>
+                    </div>
+                </div>
+            </nav>
+            <button id="btn-menu" class="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="menu-mobile">
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="guru.html">Guru & Tendik</a>
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="prestasi.html">Prestasi</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeri.html">Galeri</a>
+            <hr>
+            <a href="./perpustakaan/login.php" class="mobile-pro-link">Perpustakaan Digital</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-page hero-blog">
+            <div class="hero-overlay"></div>
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Blog & Berita</h1>
+                <p>Informasi terbaru, tips edukasi, dan kisah inspiratif dari sekolah kami.</p>
+            </div>
+        </section>
+
+        <section class="section-padded">
+            <div class="container">
+                <h2 class="section-title text-center">Artikel Terbaru</h2>
+                <div class="grid-2-responsive blog-grid">
+                    <div class="card card-blog" data-aos="fade-up">
+                        <img src="img/minatbaca.jpg" alt="Gedung Sekolah">
+                        <div class="card-body">
+                            <span class="blog-meta"><i class="fas fa-calendar-alt"></i> 10 Mei 2025 | <i class="fas fa-user"></i> Admin Sekolah</span>
+                            <h3 class="card-title"><a href="#" class="btn-link-dark">Pentingnya Membangun Minat Baca Sejak Dini pada Anak SD</a></h3>
+                            <p class="card-text">Membaca adalah jendela dunia. Artikel ini membahas strategi efektif untuk menumbuhkan kecintaan membaca pada siswa sekolah dasar...</p>
+                        </div>
+                    </div>
+                    <div class="card card-blog" data-aos="fade-up" data-aos-delay="100">
+                        <img src="img/minatbaca.jpg" alt="Gedung Sekolah">
+                        <div class="card-body">
+                            <span class="blog-meta"><i class="fas fa-calendar-alt"></i> 01 Mei 2025 | <i class="fas fa-user"></i> Guru Budi</span>
+                            <h3 class="card-title"><a href="#" class="btn-link-dark">5 Tips Belajar Efektif di Rumah untuk Siswa SD</a></h3>
+                            <p class="card-text">Panduan praktis bagi orang tua dan siswa untuk menciptakan lingkungan belajar yang kondusif dan meningkatkan hasil belajar di rumah...</p>
+                        </div>
+                    </div>
+                    <div class="card card-blog" data-aos="fade-up" data-aos-delay="200">
+                        <img src="img/minatbaca.jpg" alt="Gedung Sekolah">
+                        <div class="card-body">
+                            <span class="blog-meta"><i class="fas fa-calendar-alt"></i> 20 April 2025 | <i class="fas fa-user"></i> Tim Kesehatan</span>
+                            <h3 class="card-title"><a href="#" class="btn-link-dark">Menjaga Kesehatan Anak di Lingkungan Sekolah: Panduan Praktis</a></h3>
+                            <p class="card-text">Tips menjaga kebersihan, nutrisi, dan aktivitas fisik untuk memastikan siswa tetap sehat dan aktif selama di sekolah...</p>
+                        </div>
+                    </div>
+                    <div class="card card-blog" data-aos="fade-up" data-aos-delay="300">
+                        <img src="img/minatbaca.jpg" alt="Gedung Sekolah">
+                        <div class="card-body">
+                            <span class="blog-meta"><i class="fas fa-calendar-alt"></i> 05 April 2025 | <i class="fas fa-user"></i> Kepala Sekolah</span>
+                            <h3 class="card-title"><a href="#" class="btn-link-dark">Peran Pendidikan Karakter dalam Membentuk Generasi Unggul</a></h3>
+                            <p class="card-text">Pembahasan mengenai pentingnya penanaman nilai-nilai moral dan etika sejak dini untuk menciptakan individu yang berintegritas...</p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>SDN Ciseeng 01</h3>
+                <p>Mewujudkan generasi cerdas dan berakhlak mulia melalui pendidikan yang berkualitas dan lingkungan yang nyaman.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="profil.html">Profil Sekolah</a></li>
+                    <li><a href="guru.html">Guru & Tendik</a></li>
+                    <li><a href="kegiatan.html">Kegiatan</a></li>
+                    <li><a href="prestasi.html">Prestasi</a></li>
+                    <li><a href="blog.html">Blog Sekolah</a></li>
+                    <li><a href="galeri.html">Galeri Foto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section professional-features">
+                <h3>Perpustakaan</h3>
+                <ul>
+                    <li><a href="./perpustakaan/login.php">Perpustakaan Digital</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. H. Usa, No. 271, Parigi Mekar, Kecamatan, Ciseeng, Kabupaten Bogor</p>
+                <p><i class="fas fa-phone"></i> (081299674833)</p>
+                <p><i class="fas fa-envelope"></i> sdnegriciseeng1@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SDN Ciseeng 01. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

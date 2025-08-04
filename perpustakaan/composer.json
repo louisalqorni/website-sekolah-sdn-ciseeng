@@ -1,0 +1,13 @@
+{
+    "name": "louis/perpustakaan",
+    "require-dev": {
+        "mpdf/mpdf": "^8.2",
+        "phpoffice/phpspreadsheet": "^4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Louis\\Perpustakaan\\": "src/"
+        }
+    },
+    "require": {}
+}
